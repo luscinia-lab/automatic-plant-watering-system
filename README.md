@@ -1,4 +1,4 @@
-# ESP32 Smart Watering System
+# Automatic Plant Watering System
 
 ## Overview
 
