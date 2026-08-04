@@ -1,33 +1,34 @@
-# Automatic Plant Watering System
+# Automatic Plant Watering
 
 ## Overview
 
 This project is an automatic plant watering system developed using ESP32.
 
-The system monitors soil moisture and sunlight conditions, and automatically supplies water when plants need it.
+The system monitors soil moisture and sunlight conditions, then supplies water through hoses to plants installed throughout the house.
 
 ## Purpose
 
-I developed this system to reduce the effort required for plant care and create an environment where multiple plants in a house can be managed automatically.
+I developed this system to reduce the effort required for plant care and create an environment where multiple plants can be managed automatically.
 
 ## Features
 
 ### Automatic Watering
 
 - Measures soil moisture using sensors.
-- Automatically waters plants when soil moisture falls below a set threshold.
-- Considers sunlight conditions and avoids watering during strong sunlight.
-- Provides water at an appropriate timing for plant growth.
+- Automatically supplies water when soil moisture falls below a set threshold.
+- Considers sunlight conditions and selects an appropriate watering timing.
+- Avoids watering during strong sunlight conditions.
+- Distributes water through hoses to multiple plants.
 
 ### Manual Control
 
-- Allows manual adjustment of watering operation.
+- Allows manual adjustment of watering.
 - Users can control the system depending on plant conditions.
 
 ### Home Installation
 
 - Installed in a three-story house.
-- Designed to supply water to multiple plants throughout the house.
+- Designed to manage watering for plants located throughout the house.
 
 ## Hardware
 
@@ -36,6 +37,7 @@ I developed this system to reduce the effort required for plant care and create 
 - Light sensor
 - Water pump
 - Relay module
+- Water hoses
 - Electronic components
 
 ## Software
@@ -45,11 +47,11 @@ I developed this system to reduce the effort required for plant care and create 
 
 ## Development
 
-The ESP32 monitors soil moisture and sunlight conditions.
+The ESP32 collects information from soil moisture sensors and sunlight sensors.
 
-When the soil becomes dry and the sunlight condition is suitable, the system automatically activates the water pump.
+Based on environmental conditions, the system determines the appropriate timing for watering and controls the water pump.
 
-The system also includes manual control to adjust watering according to different plant conditions.
+Water is distributed to multiple plants through hoses connected to the pump.
 
 ## Result
 
@@ -58,5 +60,7 @@ The system also includes manual control to adjust watering according to differen
 ## Future Improvements
 
 - Add wireless monitoring
-- Improve water distribution
+- Improve water distribution accuracy
+- Reduce power consumption
+- Create a more compact design
 - Create a more compact design
