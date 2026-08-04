@@ -15,8 +15,9 @@ I developed this system to reduce the effort required for plant care and create 
 ### Automatic Watering
 
 - Measures soil moisture using sensors.
-- Automatically waters plants when the soil moisture falls below a set threshold.
-- Prevents unnecessary watering by considering sunlight conditions.
+- Automatically waters plants when soil moisture falls below a set threshold.
+- Considers sunlight conditions and avoids watering during strong sunlight.
+- Provides water at an appropriate timing for plant growth.
 
 ### Manual Control
 
@@ -44,9 +45,11 @@ I developed this system to reduce the effort required for plant care and create 
 
 ## Development
 
-The ESP32 reads sensor values and determines whether watering is necessary.
+The ESP32 monitors soil moisture and sunlight conditions.
 
-The system combines automatic control based on environmental conditions with manual operation.
+When the soil becomes dry and the sunlight condition is suitable, the system automatically activates the water pump.
+
+The system also includes manual control to adjust watering according to different plant conditions.
 
 ## Result
 
